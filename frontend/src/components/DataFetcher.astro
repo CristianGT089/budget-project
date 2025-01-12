@@ -1,0 +1,8 @@
+---
+const response = await fetch('http://localhost:8080/api/data');
+const data = await response.json();
+---
+
+<div class="bg-black text-white text-2xl p-56 flex align-middle justify-center">
+  <h1>{data.message}</h1>
+</div>
